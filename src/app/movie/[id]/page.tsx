@@ -10,12 +10,11 @@ const BASE_URL = "https://api.themoviedb.org/3/";
 
 export default async function MovieDetailPage(props: Props) {
   const movieId = props.params.id;
-  //   console.log("id", movieId);
   const res = await fetch(`${BASE_URL}/movie/${movieId}?api_key=${API_KEY}`);
 
-  //   if (!res.ok) {
-  //     throw new Error("Failed to Fetch Data!");
-  //   }
+  if (!res.ok) {
+    throw new Error("Failed to Fetch Data!");
+  }
 
   const data = await res.json();
 
