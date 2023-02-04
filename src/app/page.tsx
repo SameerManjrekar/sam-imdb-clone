@@ -22,7 +22,6 @@ export default async function Home(props: Props) {
   const data = await res.json();
   const results = data.results;
 
-  console.log("res", results);
   return (
     <div>
       <Results results={results} />
