@@ -2,9 +2,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 
-type Props = {};
-
-const SearchBox = (props: Props) => {
+const SearchBox = () => {
   const [search, setSearch] = useState<string>("");
   const router = useRouter();
 

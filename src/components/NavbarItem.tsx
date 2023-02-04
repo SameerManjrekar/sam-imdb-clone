@@ -3,15 +3,15 @@ import Link from "next/link";
 import React from "react";
 import { useSearchParams } from "next/navigation";
 
-type NavbarItemProps = {
+type Props = {
   title: string;
   param: string;
 };
 
-const NavbarItem = (navbarItemProps: NavbarItemProps) => {
+const NavbarItem = (props: Props) => {
   const searchParams = useSearchParams();
   const genre = searchParams.get("genre");
-  const { title, param } = navbarItemProps;
+  const { title, param } = props;
   return (
     <div>
       <Link

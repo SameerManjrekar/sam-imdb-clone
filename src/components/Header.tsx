@@ -7,9 +7,7 @@ import DarkModeSwitch from "./DarkModeSwitch";
 
 import MenuItem from "./MenuItem";
 
-type Props = {};
-
-const Header = (props: Props) => {
+const Header = () => {
   return (
     <div className="flex justify-between items-center mx-2 max-w-6xl sm:mx-auto py-6">
       <div className="flex">

@@ -4,9 +4,7 @@ import { MdLightMode } from "react-icons/md";
 import { BsFillMoonFill } from "react-icons/bs";
 import { useTheme } from "next-themes";
 
-type Props = {};
-
-const DarkModeSwitch = (props: Props) => {
+const DarkModeSwitch = () => {
   const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState<boolean>(false);
 
